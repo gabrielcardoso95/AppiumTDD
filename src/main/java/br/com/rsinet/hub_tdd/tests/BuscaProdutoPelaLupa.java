@@ -13,6 +13,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 import br.com.rsinet.hub_tdd.managers.AppManager;
+import br.com.rsinet.hub_tdd.methods.CadastroDeUsuarioMetodos;
 import br.com.rsinet.hub_tdd.methods.PaginaInicialMetodos;
 import br.com.rsinet.hub_tdd.methods.ProdutosMetodos;
 import br.com.rsinet.hub_tdd.utils.Constant;
@@ -26,6 +27,7 @@ public class BuscaProdutoPelaLupa {
 	private static AndroidDriver<MobileElement> driver;
 	PaginaInicialMetodos paginaInicial = new PaginaInicialMetodos();
 	ProdutosMetodos produtos = new ProdutosMetodos();
+	CadastroDeUsuarioMetodos cadastroDeUsuario = new CadastroDeUsuarioMetodos();
 	ExtentTest test = ExtentReport.getTest();
 	ExtentReports extent = ExtentReport.getExtent();
 

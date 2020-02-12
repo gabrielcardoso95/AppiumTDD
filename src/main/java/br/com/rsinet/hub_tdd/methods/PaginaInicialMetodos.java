@@ -18,7 +18,7 @@ public class PaginaInicialMetodos {
 	}
 
 	public void pesquisa_ProdutoInvalido(AndroidDriver<?> driver) {
-		paginaInicial.txtbx_Pesquisar(driver).sendKeys("Ferrari Whatsapp Freefire");
+		paginaInicial.txtbx_Pesquisar(driver).sendKeys("Ferrari");
 	}
 
 	public void clica_menuMouses(AndroidDriver<?> driver) throws InterruptedException {
@@ -28,6 +28,7 @@ public class PaginaInicialMetodos {
 	public void clica_MenuDeUsuario(AndroidDriver<?> driver) throws InterruptedException {
 		Thread.sleep(2000);
 		paginaInicial.btn_Menu(driver).click();
+		Thread.sleep(2000);
 	}
 	
 	public void clica_lnk_LogIn(AndroidDriver<?> driver) {
